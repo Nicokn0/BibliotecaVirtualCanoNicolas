@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F829513-8B29-454E-94F1-FA958E234F29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SolBiblioteca</RootNamespace>
+    <AssemblyName>SolBiblioteca</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySqlConnector, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlConnector.1.3.13\lib\net471\MySqlConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.0\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAltaEditorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaEditorial.Designer.cs">
+      <DependentUpon>frmAltaEditorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaGenero.Designer.cs">
+      <DependentUpon>frmAltaGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaLibro.Designer.cs">
+      <DependentUpon>frmAltaLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaPais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaPais.Designer.cs">
+      <DependentUpon>frmAltaPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBorrarEditorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrarEditorial.Designer.cs">
+      <DependentUpon>frmBorrarEditorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaAutor.Designer.cs">
+      <DependentUpon>frmAltaAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBorrarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrarAutor.Designer.cs">
+      <DependentUpon>frmBorrarAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBorrarGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrarGenero.Designer.cs">
+      <DependentUpon>frmBorrarGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBorrarPais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrarPais.Designer.cs">
+      <DependentUpon>frmBorrarPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarAutor.Designer.cs">
+      <DependentUpon>frmModificarAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarEditoriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarEditoriales.Designer.cs">
+      <DependentUpon>frmModificarEditoriales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarGenero.Designer.cs">
+      <DependentUpon>frmModificarGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarPais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarPais.Designer.cs">
+      <DependentUpon>frmModificarPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerListaAutores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerListaAutores.Designer.cs">
+      <DependentUpon>frmVerListaAutores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerListaEditoriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerListaEditoriales.Designer.cs">
+      <DependentUpon>frmVerListaEditoriales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerListaGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerListaGenero.Designer.cs">
+      <DependentUpon>frmVerListaGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerListaPaises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerListaPaises.Designer.cs">
+      <DependentUpon>frmVerListaPaises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAltaEditorial.resx">
+      <DependentUpon>frmAltaEditorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaGenero.resx">
+      <DependentUpon>frmAltaGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaLibro.resx">
+      <DependentUpon>frmAltaLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaPais.resx">
+      <DependentUpon>frmAltaPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBorrarEditorial.resx">
+      <DependentUpon>frmBorrarEditorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaAutor.resx">
+      <DependentUpon>frmAltaAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBorrarAutor.resx">
+      <DependentUpon>frmBorrarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBorrarGenero.resx">
+      <DependentUpon>frmBorrarGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBorrarPais.resx">
+      <DependentUpon>frmBorrarPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarAutor.resx">
+      <DependentUpon>frmModificarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarEditoriales.resx">
+      <DependentUpon>frmModificarEditoriales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarGenero.resx">
+      <DependentUpon>frmModificarGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarPais.resx">
+      <DependentUpon>frmModificarPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerListaAutores.resx">
+      <DependentUpon>frmVerListaAutores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerListaEditoriales.resx">
+      <DependentUpon>frmVerListaEditoriales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerListaGenero.resx">
+      <DependentUpon>frmVerListaGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerListaPaises.resx">
+      <DependentUpon>frmVerListaPaises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{1735bda6-59da-404f-bbe1-7eda8b63e171}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{cbb8ed75-288e-4c5d-8d70-cd8e4e0026f8}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logica\Logica.csproj">
+      <Project>{2518b54c-ca23-4eed-b138-7e62650a5e4d}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
